@@ -1,0 +1,34 @@
+{
+  "name": "senac_notes_api",
+  "version": "1.0.0",
+  "description": "Senac_Notes_API",
+  "main": "index.js",
+  "scripts": {
+    
+
+    
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/berbusatto/senac_notes_api.git"
+  },
+  "author": "Bernardo Busatto",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/berbusatto/senac_notes_api/issues"
+  },
+  "homepage": "https://github.com/berbusatto/senac_notes_api#readme",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "mysql2": "^2.3.3",
+    "nodemon": "^2.0.19",
+    "npm-run-all": "^4.1.5",
+    "sequelize": "^6.21.3",
+    "sequelize-cli": "^6.4.1",
+    "sucrase": "^3.24.0"
+  }
+}
