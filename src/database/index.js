@@ -9,12 +9,17 @@ import Note from '../app/models/Note';
 const models = []; //NÃO ENTENDI O PQ DO ARRAY
 
 class Database{
-    contructor(){
+    constructor(){
         this.init();
     }
     
     init(){
-        this.connection = new Sequelize(databaseConfig.database, databaseConfig.username, databaseConfig.password, databaseConfig);
+        this.connection = new Sequelize(
+            databaseConfig.database, 
+            databaseConfig.username, 
+            databaseConfig.password, 
+            databaseConfig
+            );
 
         //INICIANDO MODELS
         Profile.init(this.connection);

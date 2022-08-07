@@ -4,7 +4,7 @@ class Note extends Model{
     static init(sequelize){
         super.init(
             {
-                title: DataTypes.STRING,
+                title: Datatypes.STRING,
                 description: DataTypes.TEXT,
                 status: DataTypes.INTEGER,
                 date: DataTypes.DATE,
