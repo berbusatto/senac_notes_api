@@ -2,11 +2,11 @@ import 'dotenv/config';
 import express from 'express';
 import bodyParser from 'body-parser';
 import cors from 'cors';
-import routes from './routes';
+import routes from './routes.mjs';
 import './database';
 
 
-class app{
+class App{
     constructor(){  
         this.server = express(); //INICIANDO O EXPRESS
 
@@ -29,4 +29,4 @@ class app{
 
 }
 
-export default new app().server; // TODA APLICAÇÃO NODE TERMINA EXPORTANDO O OBJETO PARA O SERVIDOR
+export default new App().server; // TODA APLICAÇÃO NODE TERMINA EXPORTANDO O OBJETO PARA O SERVIDOR

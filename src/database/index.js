@@ -2,9 +2,9 @@ import Sequelize from 'sequelize';
 import databaseConfig from '../config/database';
 
 //MODELS
-import Profile from '../app/models/Profile';
-import User from '../app/models/User';
-import Note from '../app/models/Note';
+import Profile from '../api/models/Profile';
+import User from '../api/models/User';
+import Note from '../api/models/Note';
 
 const models = []; //NÃO ENTENDI O PQ DO ARRAY
 

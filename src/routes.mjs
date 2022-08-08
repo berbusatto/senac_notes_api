@@ -1,6 +1,6 @@
 import { Router } from 'express';
-import UserController from './app/controllers/UserController';
-import NoteController from './app/controllers/NoteController';
+import UserController from './api/controllers/UserController';
+import NoteController from './api/controllers/NoteController';
 
 const routes = new Router();
 

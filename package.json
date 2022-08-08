@@ -2,7 +2,8 @@
   "name": "senac_notes_api",
   "version": "1.0.0",
   "description": "Senac_Notes_API",
-  "main": "src/server.js",
+  "main": "src/server.mjs",
+  
   "nodemonConfig": {
     "exec": "npm run dev",
     "watch": [
@@ -18,8 +19,8 @@
     "start": "npm run prod",
     "build": "npm-run-all clean transpile",
     "server": "set DEBUG=express:* & node ./dist-src/server",
-    "dev": "NODE_ENV=development npm-run-all build server",
-    "prod": "NODE_ENV=production npm-run-all build server",
+    "dev": "set NODE_ENV=development & npm-run-all build server",
+    "prod": "set NODE_ENV=production & npm-run-all build server",
     "transpile": "babel ./src --out-dir dist-src",
     "clean": "rimraf dist-server",
     "watch:dev": "nodemon"
@@ -45,5 +46,11 @@
     "sequelize": "^6.21.3",
     "sequelize-cli": "^6.4.1",
     "sucrase": "^3.24.0"
+  },
+
+  "devDependencies":{
+    "rimraf": "^3.0.2",
+    "@babel/cli": "^7.0.0",
+    "@babel/core": "^7.0.0"
   }
 }
